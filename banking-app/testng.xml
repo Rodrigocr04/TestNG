@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BankAccount Test Suite">
+
+    <!--Test que ejecuta solo los tests negativos-->
+    <test name="Negative Tests">
+        <groups>
+            <run>
+                <include name="negative-tests"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="BankAccountGroupTest"/>
+            <class name="BankAccountExceptionTest"/>
+        </classes>
+    </test>
+    
+    <!--Test que ejecuta solo los tests positivos-->
+    <test name="Positive Tests">
+        <groups>
+            <run>
+                <include name="positive-tests"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="BankAccountGroupTest"/>
+            <class name="BankAccountDataDrivenTest"/>
+        </classes>
+    </test>
+
+    <!--Test de todas las clases-->
+    <test name="All Tests">
+        <classes>
+            <class name="BankAccountTest"/>
+            <class name="BankAccountLifecycleTest"/>
+            <class name="BankAccountExceptionTest"/>
+            <class name="BankAccountDataDrivenTest"/>
+            <class name="BankAccountGroupTest"/>
+            <class name="BankAccountDependencyTest"/>
+        </classes>
+    </test>
+
+</suite>

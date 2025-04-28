@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-28T08:40:34 CST" name="Surefire suite" finished-at="2025-04-28T08:40:34 CST" duration-ms="33">
+    <groups>
+      <group name="positive-tests">
+        <method signature="BankAccountDataDrivenTest.testDepositWithData(double,double)[pri:0, instance:com.borkacle.bank.tests.BankAccountDataDrivenTest@275710fc]" name="testDepositWithData" class="com.borkacle.bank.tests.BankAccountDataDrivenTest"/>
+        <method signature="BankAccountDataDrivenTest.testWithdrawalWithData(double,double)[pri:0, instance:com.borkacle.bank.tests.BankAccountDataDrivenTest@275710fc]" name="testWithdrawalWithData" class="com.borkacle.bank.tests.BankAccountDataDrivenTest"/>
+      </group> <!-- positive-tests -->
+    </groups>
+    <test started-at="2025-04-28T08:40:34 CST" name="Surefire test" finished-at="2025-04-28T08:40:34 CST" duration-ms="33">
+      <class name="com.borkacle.bank.tests.BankAccountDataDrivenTest">
+        <test-method signature="testDepositWithData(double,double)[pri:0, instance:com.borkacle.bank.tests.BankAccountDataDrivenTest@275710fc]" started-at="2025-04-28T08:40:34 CST" name="testDepositWithData" data-provider="depositData" finished-at="2025-04-28T08:40:34 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[50.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[250.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDepositWithData -->
+        <test-method signature="testDepositWithData(double,double)[pri:0, instance:com.borkacle.bank.tests.BankAccountDataDrivenTest@275710fc]" started-at="2025-04-28T08:40:34 CST" name="testDepositWithData" data-provider="depositData" finished-at="2025-04-28T08:40:34 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[300.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDepositWithData -->
+        <test-method signature="testDepositWithData(double,double)[pri:0, instance:com.borkacle.bank.tests.BankAccountDataDrivenTest@275710fc]" started-at="2025-04-28T08:40:34 CST" name="testDepositWithData" data-provider="depositData" finished-at="2025-04-28T08:40:34 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200.01]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDepositWithData -->
+        <test-method signature="testWithdrawalWithData(double,double)[pri:0, instance:com.borkacle.bank.tests.BankAccountDataDrivenTest@275710fc]" started-at="2025-04-28T08:40:34 CST" name="testWithdrawalWithData" data-provider="withdrawalData" finished-at="2025-04-28T08:40:34 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[50.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[150.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithdrawalWithData -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.borkacle.bank.tests.BankAccountDataDrivenTest@275710fc]" started-at="2025-04-28T08:40:34 CST" name="setUp" finished-at="2025-04-28T08:40:34 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.borkacle.bank.tests.BankAccountDataDrivenTest@275710fc]" started-at="2025-04-28T08:40:34 CST" name="setUp" finished-at="2025-04-28T08:40:34 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.borkacle.bank.tests.BankAccountDataDrivenTest@275710fc]" started-at="2025-04-28T08:40:34 CST" name="setUp" finished-at="2025-04-28T08:40:34 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testWithdrawalWithData(double,double)[pri:0, instance:com.borkacle.bank.tests.BankAccountDataDrivenTest@275710fc]" started-at="2025-04-28T08:40:34 CST" name="testWithdrawalWithData" data-provider="withdrawalData" finished-at="2025-04-28T08:40:34 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[199.99]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.01]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithdrawalWithData -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.borkacle.bank.tests.BankAccountDataDrivenTest@275710fc]" started-at="2025-04-28T08:40:34 CST" name="setUp" finished-at="2025-04-28T08:40:34 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.borkacle.bank.tests.BankAccountDataDrivenTest@275710fc]" started-at="2025-04-28T08:40:34 CST" name="setUp" finished-at="2025-04-28T08:40:34 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testWithdrawalWithData(double,double)[pri:0, instance:com.borkacle.bank.tests.BankAccountDataDrivenTest@275710fc]" started-at="2025-04-28T08:40:34 CST" name="testWithdrawalWithData" data-provider="withdrawalData" finished-at="2025-04-28T08:40:34 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithdrawalWithData -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.borkacle.bank.tests.BankAccountDataDrivenTest@275710fc]" started-at="2025-04-28T08:40:34 CST" name="setUp" finished-at="2025-04-28T08:40:34 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- com.borkacle.bank.tests.BankAccountDataDrivenTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
