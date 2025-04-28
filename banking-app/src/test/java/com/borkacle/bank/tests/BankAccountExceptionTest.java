@@ -15,21 +15,21 @@ public class BankAccountExceptionTest {
 
     // se prueba el deposito negativo
     @Test(expectedExceptions = IllegalArgumentException.class, // se espera una excepcion de tipo IllegalArgumentException
-          expectedExceptionsMessageRegExp = "El deposito debe ser positivo")
+          expectedExceptionsMessageRegExp = "Deposit must be positive")
     public void testNegativeDeposit() {
         account.deposit(-50.0); // se intenta depositar una cantidad negativa
     }
 
     // se prueba el retiro negativo
     @Test(expectedExceptions = IllegalArgumentException.class, 
-          expectedExceptionsMessageRegExp = "El retiro debe ser positivo")
+          expectedExceptionsMessageRegExp = "Withdrawal must be positive")
     public void testNegativeWithdrawal() {
         account.withdraw(-30.0); // se intenta retirar una cantidad negativa
     }
 
     // se prueba el retiro cuando no hay suficiente saldo
     @Test(expectedExceptions = IllegalArgumentException.class, 
-          expectedExceptionsMessageRegExp = "Fondos insuficientes")
+          expectedExceptionsMessageRegExp = "Insufficient funds")
     public void testInsufficientFunds() {
         account.withdraw(150.0); // se intenta retirar una cantidad mayor al saldo disponible
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.borkacle.bank.tests.BankAccountExceptionTest" time="0.574" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="0.655" tests="20" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,9 +15,8 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
-    <property name="sun.java.command" value="C:\Users\rodri\AppData\Local\Temp\surefire12094096249297146859\surefirebooter-20250428101606878_3.jar C:\Users\rodri\AppData\Local\Temp\surefire12094096249297146859 2025-04-28T10-16-06_723-jvmRun1 surefire-20250428101606878_1tmp surefire_0-20250428101606878_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\rodri\AppData\Local\Temp\surefire14911751539649719109\surefirebooter-20250428102120346_3.jar C:\Users\rodri\AppData\Local\Temp\surefire14911751539649719109 2025-04-28T10-21-20_199-jvmRun1 surefire-20250428102120346_1tmp surefire_0-20250428102120346_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="BankAccountExceptionTest"/>
     <property name="surefire.test.class.path" value="C:\Users\rodri\Desktop\Tec\TestPepe\TestNG Activity\banking-app\target\test-classes;C:\Users\rodri\Desktop\Tec\TestPepe\TestNG Activity\banking-app\target\classes;C:\Users\rodri\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\rodri\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\rodri\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\rodri"/>
@@ -31,13 +30,14 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\rodri\AppData\Local\Temp\surefire12094096249297146859\surefirebooter-20250428101606878_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\rodri\AppData\Local\Temp\surefire14911751539649719109\surefirebooter-20250428102120346_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.2+7-58"/>
     <property name="user.name" value="rodri"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=";"/>
+    <property name="testng.xml" value="testng.xml"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
@@ -59,7 +59,30 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testInsufficientFunds" classname="com.borkacle.bank.tests.BankAccountExceptionTest" time="0.004"/>
+  <testcase name="testDepositWithData[50.0, 250.0](1)" classname="com.borkacle.bank.tests.BankAccountDataDrivenTest" time="0.009"/>
+  <testcase name="testDepositWithData[100.0, 300.0](2)" classname="com.borkacle.bank.tests.BankAccountDataDrivenTest" time="0.0"/>
+  <testcase name="testDepositWithData[0.01, 200.01](3)" classname="com.borkacle.bank.tests.BankAccountDataDrivenTest" time="0.0"/>
+  <testcase name="testWithdrawalWithData[50.0, 150.0](1)" classname="com.borkacle.bank.tests.BankAccountDataDrivenTest" time="0.0"/>
+  <testcase name="testWithdrawalWithData[100.0, 100.0](2)" classname="com.borkacle.bank.tests.BankAccountDataDrivenTest" time="0.0"/>
+  <testcase name="testWithdrawalWithData[199.99, 0.01](3)" classname="com.borkacle.bank.tests.BankAccountDataDrivenTest" time="0.0"/>
+  <testcase name="testInitialDeposit" classname="com.borkacle.bank.tests.BankAccountDependencyTest" time="0.0"/>
+  <testcase name="testDependentWithdrawal" classname="com.borkacle.bank.tests.BankAccountDependencyTest" time="0.0"/>
+  <testcase name="testInsufficientFunds" classname="com.borkacle.bank.tests.BankAccountExceptionTest" time="0.0"/>
   <testcase name="testNegativeDeposit" classname="com.borkacle.bank.tests.BankAccountExceptionTest" time="0.0"/>
   <testcase name="testNegativeWithdrawal" classname="com.borkacle.bank.tests.BankAccountExceptionTest" time="0.0"/>
+  <testcase name="testInvalidDeposit" classname="com.borkacle.bank.tests.BankAccountGroupTest" time="0.0"/>
+  <testcase name="testInvalidWithdrawal" classname="com.borkacle.bank.tests.BankAccountGroupTest" time="0.016"/>
+  <testcase name="testValidDeposit" classname="com.borkacle.bank.tests.BankAccountGroupTest" time="0.0"/>
+  <testcase name="testValidWithdrawal" classname="com.borkacle.bank.tests.BankAccountGroupTest" time="0.0"/>
+  <testcase name="testDepositInSharedAccount" classname="com.borkacle.bank.tests.BankAccountLifecycleTest" time="0.0">
+    <system-out><![CDATA[Cuenta de prueba creada con saldo inicial: 500
+]]></system-out>
+  </testcase>
+  <testcase name="testWithdrawalFromSharedAccount" classname="com.borkacle.bank.tests.BankAccountLifecycleTest" time="0.0"/>
+  <testcase name="testDeposit" classname="com.borkacle.bank.tests.BankAccountTest" time="0.0">
+    <system-out><![CDATA[Saldo final de la cuenta: 400.0
+]]></system-out>
+  </testcase>
+  <testcase name="testInitialBalance" classname="com.borkacle.bank.tests.BankAccountTest" time="0.0"/>
+  <testcase name="testWithdrawal" classname="com.borkacle.bank.tests.BankAccountTest" time="0.0"/>
 </testsuite>
